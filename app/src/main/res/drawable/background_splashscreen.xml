@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Nền trắng -->
+    <item android:drawable="@color/white" />
+
+    <!-- Chèn khoảng cách xung quanh hình ảnh -->
+    <item>
+        <bitmap
+            android:gravity="center"
+            android:src="@drawable/greenl" />
+    </item>
+</layer-list>
