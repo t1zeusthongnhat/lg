@@ -11,6 +11,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 import androidx.viewpager2.widget.ViewPager2;
 
+import com.example.lifegreenproject.HomeActivity;
 import com.example.lifegreenproject.LoginActivity;
 import com.example.lifegreenproject.R;
 import com.google.android.material.button.MaterialButton;
@@ -68,7 +69,7 @@ public class ContainerActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // Skip the onboarding and go to LoginActivity immediately
-                startActivity(new Intent(getApplicationContext(), LoginActivity.class));
+                startActivity(new Intent(getApplicationContext(), HomeActivity.class));
                 finish();
             }
         });
