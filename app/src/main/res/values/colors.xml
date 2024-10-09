@@ -23,4 +23,14 @@
     <color name="colorTextSecondary">#757575</color>
     <color name="colorBackground">#FFFFFF</color>
 
+
+    <color name="primaryColor">#4CAF50</color> <!-- Green -->
+    <color name="primaryLightColor">#80E27E</color>
+    <color name="primaryDarkColor">#087F23</color>
+    <color name="accentColor">#FF5722</color> <!-- Orange -->
+    <color name="textColorPrimary">#212121</color>
+    <color name="textColorSecondary">#757575</color>
+    <color name="backgroundColor">#F5F5F5</color>
+    <color name="cardBackgroundColor">#FFFFFF</color>
+    <color name="dividerColor">#E0E0E0</color>
 </resources>
