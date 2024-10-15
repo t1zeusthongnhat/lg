@@ -9,6 +9,7 @@
     tools:context=".HomeActivity">
     <include
         layout="@layout/activity_main_content"/>
+    <!-- here navi-->
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/navigationView"
         android:layout_width="wrap_content"
@@ -18,6 +19,7 @@
         app:itemIconPadding="30dp"
         app:headerLayout="@layout/drawer_header"
         android:layout_gravity="start"/>
+
     <ScrollView
         android:id="@+id/scrollView2"
         android:layout_width="match_parent"
@@ -241,14 +243,7 @@
                         android:layout_marginEnd="12dp"
                         android:src="@drawable/ringing" />
 
-                    <!-- Cart Icon -->
-                    <ImageView
-                        android:id="@+id/iconCart"
-                        android:layout_width="24dp"
-                        android:layout_height="24dp"
-                        android:layout_gravity="center_vertical"
-                        android:layout_marginEnd="16dp"
-                        android:src="@drawable/ctt" />
+
                 </LinearLayout>
 
 
@@ -478,13 +473,13 @@
                         android:layout_width="20dp"
                         android:layout_height="20dp"
                         android:layout_marginTop="8dp"
-                        app:srcCompat="@drawable/event" />
+                        app:srcCompat="@drawable/scanner" />
 
                     <TextView
                         android:id="@+id/textView13"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Event"
+                        android:text="Scan Trash"
                         android:textAlignment="center" />
 
                 </LinearLayout>
