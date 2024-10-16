@@ -1,0 +1,89 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#FFFFFF">
+
+    <!-- Thanh tìm kiếm -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:src="@drawable/back" />
+
+        <EditText
+            android:id="@+id/searchEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Search garbage type"
+            android:padding="10dp"
+            android:textColor="#000"
+            android:textColorHint="#888" />
+
+        <ImageButton
+            android:id="@+id/btnClear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:src="@drawable/clear"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <!-- Hình ảnh rác -->
+    <ImageView
+        android:id="@+id/garbageImageView"
+        android:layout_width="match_parent"
+        android:layout_height="256dp"
+        android:layout_marginTop="16dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/garbage" />
+
+    <!-- Thông tin về loại rác -->
+    <TextView
+        android:id="@+id/garbageTypeTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Garbage Type: Glass"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#333" />
+
+    <!-- Thông tin khả năng tái chế -->
+    <TextView
+        android:id="@+id/recyclableTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Recyclable: Yes"
+        android:textSize="16sp"
+        android:textColor="#666" />
+
+    <!-- Cách tái chế -->
+    <TextView
+        android:id="@+id/recycleMethodTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Recycle Method: Sort and clean before disposing."
+        android:textSize="16sp"
+        android:textColor="#666" />
+
+    <!-- Dòng phân cách -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="16dp"
+        android:background="#CCC" />
+
+</LinearLayout>
