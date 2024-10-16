@@ -1,55 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <group
-        android:id="@+id/group1">
-
     <item
-        android:icon="@drawable/menu_nav"
+        android:icon="@drawable/house"
         android:id="@+id/navMenu"
-        android:title="Menu"/>
+        android:title="Home"/>
     <item
-        android:icon="@drawable/cart"
+        android:icon="@drawable/person"
         android:id="@+id/navCart"
-        android:title="Cart"/>
-    <item
-        android:icon="@drawable/favorite"
-        android:id="@+id/navFavorite"
-        android:title="Favorite"/>
-    </group>
-
-    <group
-        android:id="@+id/group2">
-    <item
-        android:icon="@drawable/ongoing"
-        android:id="@+id/navOrders"
-        android:title="Ongoing Orders"/>
-    <item
-        android:icon="@drawable/history"
-        android:id="@+id/navHistory"
-        android:title="History"/>
-    </group>
-
-    <group
-        android:id="@+id/group3">
+        android:title="User"/>
     <item
         android:icon="@drawable/feedback"
         android:id="@+id/navFeedback"
-        android:title="Feedback"/>
+        android:title="Notification"/>
+    <item
+        android:icon="@drawable/ongoing"
+        android:id="@+id/navOrders"
+        android:title="Logout"/>
     <item
         android:icon="@drawable/terms"
         android:id="@+id/navTerms"
-        android:title="Terms and Condition  "/>
-    <item
-        android:icon="@drawable/contact"
-        android:id="@+id/navContact"
-        android:title="Contact us"/>
-</group>
-<group
-    android:id="@+id/group4">
-    <item
-        android:icon="@drawable/share"
-        android:id="@+id/navShare"
-        android:title="Share"/>
-</group>
+        android:title="About Us  "/>
+
 </menu>

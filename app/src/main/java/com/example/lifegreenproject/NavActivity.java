@@ -23,22 +23,22 @@ public class NavActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState){
-         super.onCreate(savedInstanceState);
-         setContentView(R.layout.activity_home);
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_home);
 
-         drawerLayout = findViewById(R.id.drawerLayout);
-         buttonDrawerToggle = findViewById(R.id.buttonDrawerToggle);
-         navigationView = findViewById(R.id.navigationView);
+        drawerLayout = findViewById(R.id.drawerLayout);
+        buttonDrawerToggle = findViewById(R.id.buttonDrawerToggle);
+        navigationView = findViewById(R.id.navigationView);
 
 
-         buttonDrawerToggle.setOnClickListener(new View.OnClickListener() {
-             @Override
-             public void onClick(View v) {
-                 drawerLayout.open();
-             }
-         });
+        buttonDrawerToggle.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                drawerLayout.open();
+            }
+        });
 
-         View headerView = navigationView.getHeaderView(0);
+        View headerView = navigationView.getHeaderView(0);
         ImageView useImage = headerView.findViewById(R.id.userImage);
         TextView textUsername = headerView.findViewById(R.id.textUsername);
 
@@ -50,41 +50,32 @@ public class NavActivity extends AppCompatActivity {
             }
         });
 
-         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
-             @Override
-             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+        navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
 
-                 int itemId = item.getItemId();
-                 if(itemId == R.id.navMenu){
-                     Toast.makeText(NavActivity.this,"Menu Clicked", Toast.LENGTH_SHORT).show();
-                 }
-                 if(itemId == R.id.navCart){
-                     Toast.makeText(NavActivity.this,"Cart Clicked", Toast.LENGTH_SHORT).show();
-                 }
-                 if(itemId == R.id.navFavorite){
-                     Toast.makeText(NavActivity.this,"Favorite Clicked", Toast.LENGTH_SHORT).show();
-                 }
-                 if(itemId == R.id.navOrders){
-                     Toast.makeText(NavActivity.this,"Ongoing Clicked", Toast.LENGTH_SHORT).show();
-                 }
-                 if(itemId == R.id.navHistory){
-                     Toast.makeText(NavActivity.this,"History Clicked", Toast.LENGTH_SHORT).show();
-                 }
-                 if(itemId == R.id.navFeedback){
-                     Toast.makeText(NavActivity.this,"Feedback Clicked", Toast.LENGTH_SHORT).show();
-                 }
-                 if(itemId == R.id.navTerms){
-                     Toast.makeText(NavActivity.this,"Term Clicked", Toast.LENGTH_SHORT).show();
-                 }
-                 if(itemId == R.id.navContact){
-                     Toast.makeText(NavActivity.this,"Contact Clicked", Toast.LENGTH_SHORT).show();
-                 }
-                 if(itemId == R.id.navShare){
-                     Toast.makeText(NavActivity.this,"Share Clicked", Toast.LENGTH_SHORT).show();
-                 }
-                 drawerLayout.close();
-                 return false;
-             }
-         });
+                int itemId = item.getItemId();
+                if(itemId == R.id.navMenu){
+                    Toast.makeText(NavActivity.this,"Menu Clicked", Toast.LENGTH_SHORT).show();
+                }
+                if(itemId == R.id.navCart){
+                    Toast.makeText(NavActivity.this,"Cart Clicked", Toast.LENGTH_SHORT).show();
+                }
+
+                if(itemId == R.id.navOrders){
+                    Toast.makeText(NavActivity.this,"Ongoing Clicked", Toast.LENGTH_SHORT).show();
+                }
+
+                if(itemId == R.id.navFeedback){
+                    Toast.makeText(NavActivity.this,"Feedback Clicked", Toast.LENGTH_SHORT).show();
+                }
+                if(itemId == R.id.navTerms){
+                    Toast.makeText(NavActivity.this,"Term Clicked", Toast.LENGTH_SHORT).show();
+                }
+
+                drawerLayout.close();
+                return false;
+            }
+        });
     }
 }

@@ -69,7 +69,25 @@ public class HomeActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        AppCompatButton exchangeGiftButton = findViewById(R.id.button2a);
+        exchangeGiftButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(HomeActivity.this, GiftExchangeActivity.class);
+                startActivity(intent);
+            }
 
+        });
+
+        AppCompatButton tutorialButton = findViewById(R.id.button2b);
+        tutorialButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(HomeActivity.this, TutorialActivity.class);
+                startActivity(intent);
+            }
+
+        });
         // Thay đổi màu sắc icon và text khi ở trang Home
         LinearLayout homeLayout = findViewById(R.id.homeLayout); // Đảm bảo id đã đúng
         ImageView homeIcon = findViewById(R.id.imageView12);
